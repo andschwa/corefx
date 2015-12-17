@@ -9,6 +9,18 @@ namespace System
 {
     public static partial class Console
     {
+        public static string Title { get; set; }
+        public static void Beep();
+        public static void Clear();
+        public static bool KeyAvailable { get; }
+        public static int CursorLeft { get; set; }
+        public static int CursorTop { get; set; }
+        public static void SetCursorPosition(int left, int top);
+        public static int WindowHeight { get; set; }
+        public static int WindowWidth { get; set; }
+        public static int WindowLeft { get; set; }
+        public static int WindowTop { get; set; }
+
         public static System.ConsoleColor BackgroundColor { get { return default(System.ConsoleColor); } set { } }
         public static bool CursorVisible { get { return default(bool); } set { } }
         public static System.IO.TextWriter Error { get { return default(System.IO.TextWriter); } }
